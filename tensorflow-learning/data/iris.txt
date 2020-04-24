@@ -1,0 +1,7 @@
+아이리스(붓꽃) 데이터에 대한 데이터이다:프랑스국화
+Sepal Length:꽃받침의 길이 정보이다.
+Sepal Width:꽃받침의 너비 정보이다.
+Petal Length:꽃잎의 길이 정보이다.
+Petal Width:꽃잎의 너비 정보이다.  
+Species 꽃의 종류 정보이다.  
+setosa / versicolor / virginica 의 3종류로 구분된다.
