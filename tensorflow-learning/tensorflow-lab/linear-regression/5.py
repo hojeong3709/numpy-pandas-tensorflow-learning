@@ -2,6 +2,7 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 import warnings
+
 warnings.filterwarnings('ignore')
 
 data = np.loadtxt('../../data/data-01.csv', delimiter=",")
@@ -41,9 +42,4 @@ print(sess.run(hx, feed_dict={X: [[100, 98, 81]]}))
 
 # 73, 80, 75
 # 93, 88, 93 경우 점수 예측
-print(sess.run(hx, feed_dict={X:[[73, 80, 75], [93, 88, 93]]}))
-
-
-
-
-
+print(sess.run(hx, feed_dict={X: [[73, 80, 75], [93, 88, 93]]}))

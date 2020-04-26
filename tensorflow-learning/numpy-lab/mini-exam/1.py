@@ -1,9 +1,7 @@
-
 import numpy as np
 
 kor = np.array([60, 55, 70, 30, 20, 90])
 
-#1
 ans1 = np.max(kor)
 
 ans2 = kor[np.where(kor > 80)]
@@ -21,12 +19,11 @@ ans7 = kor[np.where(kor >= 50)] * 1.1
 print(kor)
 ans8 = np.sort(kor)[:-6:-1]
 
-
-# print(ans1)
-# print(ans2)
-# print(ans3)
-# print(ans4)
-# print(ans5)
+print(ans1)
+print(ans2)
+print(ans3)
+print(ans4)
+print(ans5)
 print(ans6)
 print(ans7)
 print(ans8)

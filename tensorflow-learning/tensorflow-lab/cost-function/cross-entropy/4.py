@@ -85,7 +85,7 @@ print(np.equal(iris["target"], hx.argmax(axis=1)).mean())
 
 
 
-# IO = Dense(units=3, input_shape=[4], activation='softmax')
+# IO = Dense(units=3, input_shape=[4], activation='cross-entropy')
 # model = Sequential([IO])
 # model.compile(loss='categorical_crossentropy', optimizer=Adam(0.01), metrics=['accuracy'])
 # history = model.fit(x, y, epochs=1000)

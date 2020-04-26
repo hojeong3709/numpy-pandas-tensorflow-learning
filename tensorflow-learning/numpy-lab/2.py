@@ -1,6 +1,5 @@
 import numpy as np
 
-# ndarray 객체 생성
 # list to ndarray
 data1 = np.array([1, 2, 3, 4, 5], dtype=np.int32)
 print(data1)
@@ -20,22 +19,24 @@ print(data5)
 print(type(data5))
 
 # 속성
-data = np.array([1, 2, 3, 4, 5])
 # 1차원 ( 행, ) -> 열 생략
+data = np.array([1, 2, 3, 4, 5])
 print(data.shape)
 print(data.dtype)
 print(data.size)
 
-data = np.array([[1, 2], [3, 4]])
 # 2차원 ( 행, 열 )
-print(data.shape)
-
+data = np.array([[1, 2], [3, 4]])
 print(data)
+print(data.shape)
 data = data.astype(np.float32)
+data = np.float32(data)
 print(data)
 
 # 함수
-data6 = np.array([1, 2, 3, 4, 5, 6])
+data6 = np.array([1, 2, 3, 4, 5, 6], dtype=np.float32)
 print(data6)
 data6 = data6.reshape(3, 2)
+print(data6)
+data6 = data6.reshape(-1, 2)
 print(data6)

@@ -14,7 +14,6 @@ y = np.array([[0], [0], [0], [1], [1], [1]])
 print(x_data.shape)
 print(y.shape)
 
-
 X = tf.placeholder(tf.float32)
 W = tf.Variable(tf.random_uniform([2, 1]))
 b = tf.Variable(tf.random_uniform([1]))
@@ -22,7 +21,7 @@ b = tf.Variable(tf.random_uniform([1]))
 z = tf.matmul(X, W) + b
 hx = tf.sigmoid(z)
 
-cost_i = y*(-tf.log(hx)) + (1-y)*(-tf.log(1-hx))
+cost_i = y * (-tf.log(hx)) + (1 - y) * (-tf.log(1 - hx))
 cost = tf.reduce_mean(cost_i)
 optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.1)
 train = optimizer.minimize(cost)

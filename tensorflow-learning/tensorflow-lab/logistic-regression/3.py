@@ -26,4 +26,3 @@ history = model.fit(x_data, y_data, epochs=100)
 print(model.predict(x_data))
 print(model.predict_classes(x_data))
 print(history.history['acc'][-1])
-

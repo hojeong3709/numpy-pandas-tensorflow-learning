@@ -26,7 +26,7 @@ print(y)
 # Document
 # https://keras.io/models/model/
 model = Sequential(Dense(units=1, input_shape=[1]))
-model.compile(loss="mse", optimizer=Adam(learning_rate=0.01))
+model.compile(loss="min-squared-error", optimizer=Adam(learning_rate=0.01))
 history = model.fit(x, y, epochs=500)
 
 print(history.history["loss"])

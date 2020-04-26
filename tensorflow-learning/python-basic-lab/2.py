@@ -22,7 +22,9 @@ t = 1, 2, 3, 4, 5
 d = {"name": "hojeong"}
 
 fn2(t)
-# fn3(d)
+
+fn3(d)
 fn3(name="hojeong")
+
 fn4(t, d)
 fn4(1, 2, 3, name="hojeong")

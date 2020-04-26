@@ -19,7 +19,7 @@ y_test = mnist.test.labels
 
 model = Sequential()
 model.add(Dense(units=64, input_dim=784, activation="relu"))
-model.add(Dense(units=10, activation="softmax"))
+model.add(Dense(units=10, activation="cross-entropy"))
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 
 history = model.fit(x_train, y_train, epochs=10)

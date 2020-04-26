@@ -23,10 +23,10 @@ init = tf.global_variables_initializer()
 sess.run(init)
 
 for i in np.arange(400):
-    sess.run(train, feed_dict={X:x})
-    print(i, sess.run(cost, feed_dict={X:x}))
+    sess.run(train, feed_dict={X: x})
+    print(i, sess.run(cost, feed_dict={X: x}))
 
 print(sess.run(W))
 
 # x가 5일때의 값을 예측하시오
-print(sess.run(hx, feed_dict={X:5}))
+print(sess.run(hx, feed_dict={X: 5}))

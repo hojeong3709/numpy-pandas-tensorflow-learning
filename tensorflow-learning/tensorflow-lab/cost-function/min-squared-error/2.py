@@ -9,7 +9,7 @@ w = -1
 X = tf.constant(x)
 Y = tf.constant(y)
 
-hypothesis = w*X
+hypothesis = w * X
 sq = tf.square(hypothesis - Y)
 cost = tf.reduce_mean(sq)
 

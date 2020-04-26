@@ -3,7 +3,7 @@
 (R, M)
 0) 마지막광물분류를 제외한 나머지 컬럼은 초음파 측정치 임
 1)eary stopping적용할것)
-2)train 과 data_split set 을 이용할것(acc 구할것)
+2)train 과 train_test_data_split set 을 이용할것(acc 구할것)
 tensor 버전, keras 버전
 2개 버전을 작성할것
 '''

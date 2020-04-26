@@ -17,11 +17,8 @@ print(df.corr())
 sns.heatmap(df.corr(), vmin=-1, vmax=1,
             linewidths=0.5, annot=True,
             cmap=plt.cm.gist_heat)
-# plt.show()
 
 sns.pairplot(df)
-# plt.show()
-
 sns.pairplot(vars=['petal length (cm)',
                    'petal width (cm)', 'target'],
              hue='target', data=df)

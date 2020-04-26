@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import datasets
 import warnings
+
 warnings.filterwarnings('ignore')
 '''
 아이리스(붓꽃) 데이터에 대한 데이터이다:
@@ -60,13 +61,3 @@ plt.plot(y_data, 'b--')
 # 예측값
 plt.plot(sess.run(hx, feed_dict={X: x_data}), "r--")
 plt.show()
-
-
-
-
-
-
-
-
-
-

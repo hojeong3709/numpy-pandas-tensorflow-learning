@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
-data = np.loadtxt("../../data/softmax.txt", dtype=np.float32)
+data = np.loadtxt("../../data/cross-entropy.txt", dtype=np.float32)
 
 x = data[:, 1:3]
 y = data[:, 3:]

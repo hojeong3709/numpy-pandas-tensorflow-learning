@@ -65,7 +65,7 @@ Y = tf.placeholder(dtype=tf.float32, shape=[None, classes])
 
 logits = tf.matmul(X, W) + b
 hypothesis = tf.nn.softmax(logits)
-# cost = tf.reduce_mean(-tf.reduce_sum(Y * tf.log(hypothesis), axis=1))
+# cost-function = tf.reduce_mean(-tf.reduce_sum(Y * tf.log(hypothesis), axis=1))
 
 # softmax와 cast까지 같이 해주는 함수
 # mean

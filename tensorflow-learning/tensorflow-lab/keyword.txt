@@ -1,0 +1,20 @@
+cost function
+- min squared error ( regression ) ==> linear regression
+- binary cross entropy ( binary classification ) ==> logistic regression
+- categorical cross entropy ( categorical classification ) ==>  multi class, softmax
+
+data preprocessing
+- fillna
+- correlation
+- pair plot
+
+tensorflow/keras
+- element wise operation
+- init variable ( he, xaiver initializer )
+- early stopping
+- optimizer ( rmsprop, adam, momentum )
+- tensorflow 1.x vs 2.x
+
+
+
+

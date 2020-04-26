@@ -20,7 +20,7 @@ layer1 = tf.sigmoid(tf.matmul(X, W1) + b1)  # input : 4 X 2 weight : 2 X 2 ==> 4
 # output layer
 W2 = tf.Variable(tf.random_normal([2, 1]))
 b2 = tf.Variable(tf.random_normal([1]))
-z = tf.matmul(layer1, W2) + b2 # input : 4 X 2 weight : 2 X 1 ==> 4 X 1
+z = tf.matmul(layer1, W2) + b2  # input : 4 X 2 weight : 2 X 1 ==> 4 X 1
 hx = tf.sigmoid(z)
 
 # logistic..

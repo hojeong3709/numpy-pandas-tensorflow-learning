@@ -2,22 +2,25 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def cost(x, y, w):
     c = 0
     for i in np.arange(len(x)):
         hx = w * x[i]
         # 오차제곱
-        c = c + (hx-y[i]) ** 2
+        c = c + (hx - y[i]) ** 2
 
-    return c/len(x)
+    return c / len(x)
+
 
 def gradient_descent(x, y, w):
     c = 0
     for i in range(len(x)):
         hx = w * x[i]
         # W에 대한 미분, 편미분을 통해 x[i]가 도출
-        c = c + (hx-y[i]) * x[i]
-    return c/len(x)
+        c = c + (hx - y[i]) * x[i]
+    return c / len(x)
+
 
 def show_gradient():
     x = [1, 2, 3]
@@ -32,5 +35,6 @@ def show_gradient():
             break
         print(i, c)
     print("w=", w)
+
 
 show_gradient()

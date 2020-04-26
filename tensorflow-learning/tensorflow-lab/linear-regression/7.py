@@ -8,10 +8,11 @@ from tensorflow.keras import Sequential
 from tensorflow.keras.optimizers import Adam
 from sklearn import datasets
 
-matplotlib.rcParams['font.family']='Malgun Gothic'
+matplotlib.rcParams['font.family'] = 'Malgun Gothic'
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 import warnings
+
 warnings.filterwarnings('ignore')
 
 iris = datasets.load_iris()

@@ -2,10 +2,11 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 import warnings
+
 warnings.filterwarnings('ignore')
 
 x = [[1., 0], [0, 2.], [3., 0], [0, 4.], [5., 0]]
-y = [1, 2, 3, 4,5]
+y = [1, 2, 3, 4, 5]
 
 w = tf.Variable(tf.random_uniform([2, 1]))
 b = tf.Variable(tf.random_uniform([1]))

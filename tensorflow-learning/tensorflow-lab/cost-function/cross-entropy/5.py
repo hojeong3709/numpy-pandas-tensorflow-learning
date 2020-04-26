@@ -10,7 +10,7 @@ checkpoint_dir = os.path.dirname(checkpoint_path)
 cp_callback = ModelCheckpoint(
     checkpoint_path, verbose=1, save_weights_only=True,
     period=5)
-IO = Dense(units=3, input_shape=[4], activation='softmax')
+IO = Dense(units=3, input_shape=[4], activation='cross-entropy')
 model = Sequential([IO])
 model.compile(loss='categorical_crossentropy',
               optimizer=Adam(0.01), metrics=['accuracy'])

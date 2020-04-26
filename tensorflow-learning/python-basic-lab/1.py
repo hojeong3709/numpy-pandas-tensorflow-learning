@@ -1,7 +1,6 @@
-# list - 순서가 있고 변경가능
-l = [10, 20, 30, 40, 50]
 
-l.append(100)
+# list - 순서가 있고 변경가능
+l = [10, 20, 30, 40, 50, 100]
 print(l)
 l.insert(1, 200)
 print(l)
@@ -22,3 +21,11 @@ print(d.items())
 
 d["height"] = 173
 print(d)
+
+# set - 순서가 없고 중복이 없음
+s = set()
+s.add(10)
+s.add(10)
+s.add(20)
+s.add(30)
+print(s)

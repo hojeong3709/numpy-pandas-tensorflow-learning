@@ -24,7 +24,7 @@ b1 = tf.get_variable('b1', [100],
                      initializer=tf.contrib.layers.xavier_initializer())
 
 # Gradient Vanishing 문제를 해결하기 위해서
-# softmax --> relu : activation function을 relu로
+# cross-entropy --> relu : activation function을 relu로
 z1 = tf.matmul(X, W1) + b1
 hy1 = tf.nn.relu(z1)
 
@@ -60,4 +60,3 @@ predict = sess.run(hy, feed_dict={X: x_test}).argmax(axis=1)
 
 # label Data는 One Hot Vector 이므로 argmax로 제일 큰값에 대한 인덱스를 뽑기 ( 정답뽑기 )
 accuracy = sess.run(tf.reduce_mean(tf.cast(tf.equal(predict, y_test.argmax(axis=1)))), feed_dict={X: x_test, Y: y_test})
-

@@ -14,7 +14,6 @@ cost = tf.reduce_mean(tf.square(hx - Y))
 optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.1)
 train = optimizer.minimize(cost)
 
-
 sess = tf.Session()
 init = tf.global_variables_initializer()
 sess.run(init)

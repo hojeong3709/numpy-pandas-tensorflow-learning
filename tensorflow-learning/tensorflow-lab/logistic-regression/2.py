@@ -1,4 +1,3 @@
-
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -22,7 +21,7 @@ b = tf.get_variable(name='b1', shape=[1],
 z = tf.matmul(X, W) + b
 hx = tf.sigmoid(z)
 
-cost_i = Y * (-tf.log(hx)) + (1-Y) * (-tf.log(1-hx))
+cost_i = Y * (-tf.log(hx)) + (1 - Y) * (-tf.log(1 - hx))
 cost = tf.reduce_mean(cost_i)
 optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.1)
 train = optimizer.minimize(cost)

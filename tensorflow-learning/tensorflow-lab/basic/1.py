@@ -6,7 +6,7 @@ hello = tf.constant("Hello Tensorflow")
 print(hello)
 
 sess = tf.Session()
-# bytes
+# 실행 후 결과값이 bytes 타입이므로 decode 필요
 result = sess.run(hello)
 print(result)
 print(result.decode())

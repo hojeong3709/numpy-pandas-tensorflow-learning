@@ -14,20 +14,21 @@ Early Stopping Module
 '''
 from tensorflow.keras.callbacks import EarlyStopping
 
-matplotlib.rcParams['font.family']='Malgun Gothic'
+matplotlib.rcParams['font.family'] = 'Malgun Gothic'
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 import warnings
+
 warnings.filterwarnings('ignore')
 
-C = np.array([-40, -10,  0,  8, 15, 22,  38], dtype=np.float32)
-F = np.array([-40,  14, 32, 46, 59, 72, 100],  dtype=np.float32)
+C = np.array([-40, -10, 0, 8, 15, 22, 38], dtype=np.float32)
+F = np.array([-40, 14, 32, 46, 59, 72, 100], dtype=np.float32)
 
 # label 갯수 --> units
 # feature 갯수 --> input_shape
 D = Dense(units=1, input_shape=[1])
 model = Sequential(D)
-model.compile(loss="mse", optimizer=Adam(learning_rate=0.1))
+model.compile(loss="min-squared-error", optimizer=Adam(learning_rate=0.1))
 
 early_stop = EarlyStopping(monitor="loss", patience=50, min_delta=0.1)
 

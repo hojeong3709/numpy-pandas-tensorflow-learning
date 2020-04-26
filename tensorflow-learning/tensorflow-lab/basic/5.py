@@ -1,6 +1,7 @@
 import tensorflow as tf
 
-# Element wise operation --> Broadcasting
+# Tensorflow 연산시 꼭 알아야 하는점 --.> Element Wise Operation
+# Element Wise Operation 이 동작하면 매트릭스 연산시 Broadcasting
 a = tf.constant([[1, 2, 3]])
 # b = tf.constant(11)
 b = tf.constant([11]) # broad casting

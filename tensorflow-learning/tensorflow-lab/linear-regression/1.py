@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import warnings
+
 warnings.filterwarnings('ignore')
 
 # import os
@@ -38,18 +39,18 @@ init = tf.global_variables_initializer()
 sess.run(init)
 
 for i in range(10000):
-    sess.run(train, feed_dict={X:x})
+    sess.run(train, feed_dict={X: x})
     if not i % 100:
-        print(i, sess.run(cost, feed_dict={X:x}))
+        print(i, sess.run(cost, feed_dict={X: x}))
 
 # 위에서 학습이 끝났으므로 W와 b값이 도출됨.
 # 자동차 속도가 30과 50일때 제동거리 예측가능
-print(sess.run(hx, feed_dict={X:30}))
-print(sess.run(hx, feed_dict={X:50}))
+print(sess.run(hx, feed_dict={X: 30}))
+print(sess.run(hx, feed_dict={X: 50}))
 
 plt.title("cars")
 plt.xlabel("speed")
 plt.ylabel("distance")
 plt.scatter(x, y)
-plt.plot(x, sess.run(hx, feed_dict={X:x}), "r--")
+plt.plot(x, sess.run(hx, feed_dict={X: x}), "r--")
 plt.show()

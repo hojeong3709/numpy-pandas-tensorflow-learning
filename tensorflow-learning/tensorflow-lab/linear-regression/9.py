@@ -9,7 +9,6 @@ from tensorflow.keras.optimizers import Adam
 from sklearn import datasets
 from sklearn import preprocessing
 
-
 x = [1, 2, 3]
 y = [1, 2, 3]
 
@@ -21,7 +20,6 @@ hx = W * X
 cost = tf.reduce_mean(tf.square(hx - Y))
 optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.1)
 train = optimizer.minimize(cost)
-
 
 sess = tf.Session()
 init = tf.global_variables_initializer()
@@ -42,7 +40,3 @@ for i in np.arange(400):
         pass
     else:
         pass
-
-
-
-
